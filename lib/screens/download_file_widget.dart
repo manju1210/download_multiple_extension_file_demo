@@ -51,14 +51,13 @@ class _DownloadFileWidgetState extends State<DownloadFileWidget> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                progress == "100%" ? const Icon(Icons.check_circle_outline_outlined,color: Colors.green,size: 40,) :
+
+                progress == "100%" ?
+                const Icon(Icons.check_circle_outline_outlined,color: Colors.green,size: 40,) :
                 const CircularProgressIndicator(),
 
                 const SizedBox(height: 10.0,),
-                Text(
-                  'Downloading File: $progress',
-                  style: const TextStyle(color: Colors.white),
-                ),
+                Text('Downloading File: $progress', style: const TextStyle(color: Colors.white),),
               ],
             ),
           ),
